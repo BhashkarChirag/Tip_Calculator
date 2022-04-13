@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  background-color: rgb(220, 221, 221);
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.container {
+  background-color: rgb(161, 252, 252);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 350px;
+  height: 455px;
+  padding: 0px 0px 15px 30px;
+}
+.h1 {
+  background-color: #ee9445;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+input,
+select {
+  width: 80%;
+  padding: 10px;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #0074d9;
+  outline: none;
+}
+
+select {
+  width: 88% !important;
+}
+
+button {
+  margin: 20px auto;
+  width: 150px;
+  height: 50px;
+  background-color: #39cccc;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.tip {
+  margin-top: -10px;
+  margin-left: 10px;
+  font-size: 18px;
+  display: none;
+}
