@@ -1,11 +1,11 @@
 window.onload = () => {
-  document.querySelector("#calculate").onclick = calculateTip;
+  document.getElementById("calculate").onclick = calculateTip;
 };
 
 function calculateTip() {
-  let amount = document.querySelector("#amount").value;
-  let persons = document.querySelector("#persons").value;
-  let service = document.querySelector("#services").value;
+  let amount = document.getElementById("amount").value;
+  let persons = document.getElementById("persons").value;
+  let service = document.getElementById("services").value;
 
   console.log(service);
   if (amount === "" && service === "Select") {
@@ -13,12 +13,12 @@ function calculateTip() {
     return;
   }
 
-  if (persons === "1") document.querySelector("#each").style.display = "none";
-  else document.querySelector("#each").style.display = "block";
+  if (persons === "1") document.getElementById("each").style.display = "none";
+  else document.getElementById("each").style.display = "block";
 
   let total = (amount * service) / persons;
   total = total.toFixed(2);
 
   document.querySelector(".tip").style.display = "block";
-  document.querySelector("#total").innerHTML = total;
+  document.getElementById("total").innerHTML = total;
 }
