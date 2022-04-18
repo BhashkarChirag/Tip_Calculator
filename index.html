@@ -18,14 +18,24 @@
 
       <p>How was the service ?(Rating On the scale of 5)</p>
 
-      <select id="services">
+      <!-- <select id="services">
         <option selected disabled hidden>Select</option>
         <option value="0.25">5 -25%</option>
         <option value="0.20">4 -20%</option>
         <option value="0.15">3 -15%</option>
         <option value="0.10">2 -10%</option>
         <option value="0.05">1 -05%</option>
-      </select>
+      </select> -->
+     
+        <input
+          type="range"
+          id="services"
+          min="5"
+          max="25"
+          step="5"
+          value="5"
+        />
+     
 
       <p>Total number of persons</p>
 
@@ -43,5 +53,5 @@
       </div>
     </div>
   </body>
-  <script src="https://bhashkarchirag.github.io/Tip_Calculator/tipcalc.js"></script>
+  <script src="/tipcalc.js"></script>
 </html>
