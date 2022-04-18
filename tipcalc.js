@@ -1,7 +1,3 @@
-window.onload = () => {
-  document.getElementById("calculate").onclick = calculateTip;
-};
-
 function calculateTip() {
   let amount = document.getElementById("amount").value;
   let persons = document.getElementById("persons").value;
@@ -22,3 +18,6 @@ function calculateTip() {
   document.querySelector(".tip").style.display = "block";
   document.getElementById("total").innerHTML = total;
 }
+window.onload = () => {
+  document.getElementById("calculate").onclick = calculateTip;
+};
