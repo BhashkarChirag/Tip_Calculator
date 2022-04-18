@@ -4,7 +4,7 @@ function calculateTip() {
   let services = document.getElementById("services").value;
 
   console.log(services);
-  if (amount === "" && service === "Select") {
+  if (amount === "") {
     alert("Please enter valid values");
     return;
   }
